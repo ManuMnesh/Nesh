@@ -36,6 +36,7 @@
           "overscroll-behavior: contain"
         ]
       }
-    ]
+    ],
+    "no-protocol-relative-urls": "off"
   }
 }
