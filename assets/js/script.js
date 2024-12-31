@@ -160,7 +160,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 function celebrate() {
   document.querySelector(".proposal-content").classList.add("celebrate");
-  document.querySelector(".proposal-question").innerText = "Yay! 🎉 You said yes!";
+  document.querySelector(".proposal-question").innerText = "Yay! 🎉 You said yes! I love you babygirl ❤️";
 }
 
 function cry() {
