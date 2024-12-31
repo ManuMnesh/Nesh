@@ -1871,3 +1871,95 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+/* Styling the section */
+.proposal {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Background Image */
+.proposal-bg .bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(8px) brightness(0.6);
+}
+
+/* Content styling */
+.proposal-content {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.proposal-question {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.proposal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.proposal-btn {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.yes-btn {
+  background-color: #4caf50;
+}
+
+.no-btn {
+  background-color: #f44336;
+}
+
+.proposal-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Celebratory and crying effects */
+.celebrate {
+  animation: confetti 3s infinite;
+}
+
+@keyframes confetti {
+  0%, 100% {
+    background-color: #ffdf00;
+  }
+  50% {
+    background-color: #4caf50;
+  }
+}
+
+.cry {
+  animation: rain 3s infinite;
+}
+
+@keyframes rain {
+  0%, 100% {
+    background-color: #555;
+  }
+  50% {
+    background-color: #000;
+  }
+}

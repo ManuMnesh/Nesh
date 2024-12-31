@@ -157,3 +157,13 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+function celebrate() {
+  document.querySelector(".proposal-content").classList.add("celebrate");
+  document.querySelector(".proposal-question").innerText = "Yay! 🎉 You said yes!";
+}
+
+function cry() {
+  document.querySelector(".proposal-content").classList.add("cry");
+  document.querySelector(".proposal-question").innerText = "Oh no 😢!";
+}
